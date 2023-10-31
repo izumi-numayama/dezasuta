@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/*work1*/
+body {
+    background-color: #eeeeee;
+}
+
+h2 {
+    text-align: center;
+    padding: 40px;
+    color: rgba(0, 112, 56, 0.651);
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+li {
+    max-width: 330px;
+    margin: 10px;
+    background-color: white;
+}
+
+.content-title {
+    margin: 10px;
+    padding: 0.1em 0.3em;
+    border-left: 10px solid rgba(0, 112, 56, 0.651);
+    color: rgba(0, 112, 56, 0.651);
+}
+
+p {
+    max-width: 330px;
+    overflow-wrap: normal;
+    padding: 10px;
+}
+
+/*work2*/
+@media screen and (max-width: 400px) {
+    ul {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    li {
+        margin: 20px;
+    }
+}
