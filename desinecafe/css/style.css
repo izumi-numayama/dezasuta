@@ -1,0 +1,240 @@
+@charset "utf-8";
+
+body {
+    background-color: #e8d9bf;
+}
+
+.header_container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 7% 0 2.7%;
+    box-sizing: border-box;
+}
+
+.logo img {
+    width: 226.76px;
+}
+
+.header_nav ul {
+    display: flex;
+    gap: 45px;
+}
+
+.header_nav li {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    width: 105px;
+    text-align: center;
+}
+
+.slider {
+    width: 100%;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.home {
+    text-align: center;
+    margin: 80px;
+}
+
+.home_text:first-child {
+    font-size: 30px;
+}
+
+.home_text:nth-child(2) {
+    font-size: 82px;
+    padding: 50px 0 40px 0;
+}
+.home_text:nth-child(3) {
+    font-size: 82px;
+    padding: 0 0 50px 0;
+}
+
+.home_text:nth-child(4) {
+    font-size: 23px;
+}
+
+.home_text:nth-child(5) {
+    line-height: 50px;
+    font-size: 23px;
+}
+
+.about_main {
+    width: 1000px;
+    display: flex;
+    margin: 0 auto;
+
+    align-items: center;
+    padding: 0 0 90px 0;
+}
+
+.about_main p img {
+    width: 500px;
+    border-radius: 0 0 50px 0;
+}
+
+.about_ul {
+    margin-left: 120px;
+}
+
+.about_img {
+    width: 272.39px;
+    margin: 60px 0 60px 0;
+}
+
+.about_title {
+    font-size: 44px;
+    font-weight: 600;
+    padding: 13px;
+}
+
+.about_text {
+    width: 410.82px;
+    font-size: 16px;
+    margin: 35px 0 0 0;
+}
+
+#menu {
+    margin-bottom: 90px;
+}
+
+.menu_img {
+    width: 151.38px;
+    margin: 0 auto;
+}
+
+.menu_text {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu_text ul {
+    display: flex;
+}
+
+.menu_text ul li {
+    max-width: 300px;
+    margin: 40px 20px 20px 20px;
+}
+
+.text_img img {
+    max-width: 300px;
+    border-top-right-radius: 50px;
+}
+
+.menu_title {
+    color: #d30202;
+    font-size: 38px;
+    margin-top: -10px;
+}
+
+.menu_item {
+    font-size: 17px;
+}
+
+.gallery_img {
+    width: 245.18px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.gallery_main ul {
+    display: flex;
+}
+
+.gallery_main ul li {
+    width: 384px;
+    margin-bottom: 70px;
+}
+
+.event_img {
+    width: 173.82px;
+    margin: 0 auto;
+    padding-bottom: 38px;
+}
+
+.event_text {
+    display: flex;
+}
+
+.event_container {
+    max-width: 1000px;
+    background-color: #ffffff;
+    border: 3.68px solid #4f260b;
+    margin: 0 auto;
+    padding: 30px 0 30px 0;
+}
+
+.day {
+    margin: 10px 110px 10px 110px;
+}
+
+.title {
+    margin: 10px 0 10px 0;
+}
+
+#access {
+    margin-top: 70px;
+}
+
+.access_img {
+    width: 213.83px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+iframe {
+    width: 100%;
+}
+
+footer {
+    background-color: #ffffff;
+    padding-top: 80px;
+}
+
+.footer {
+    width: 1000px;
+    display: flex;
+
+    justify-content: left;
+    margin: 0 auto;
+}
+
+footer img {
+    width: 226.76px;
+    height: 50.28px;
+    margin: auto;
+}
+
+footer div ul {
+    margin: 10px 0 70px 65px;
+}
+
+footer div ul li {
+    font-size: 20px;
+    color: #000000;
+    line-height: 40px;
+}
+
+.footer_c {
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.page_top {
+    width: 125px;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+}
