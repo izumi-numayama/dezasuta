@@ -7,6 +7,7 @@
     <title>デザインカフェ</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -39,8 +40,32 @@
             </nav>
         </div>
 
+        <div class="humburger"><span></span></div>
+        <nav class="sp_nav">
+            <ul>
+                <li>
+                    <a href="#about">ABOUT US</a>
+                </li>
+                <li>
+                    <a href="#menu">MENU</a>
+                </li>
+                <li>
+                    <a href="#gallery">GALLERY</a>
+                </li>
+                <li>
+                    <a href="#event">EVENT</a>
+                </li>
+                <li>
+                    <a href="#access">ACCESS</a>
+                </li>
+            </ul>
+        </nav>
+
         <div class="slider">
-            <img src="./images/pc_first-100.jpg" alt="カフェの様子">
+            <picture>
+                <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width: 767px)">
+                <img src="./images/pc_first-100.jpg" alt="カフェの様子">
+            </picture>
     </header>
 
     <div class="home">
@@ -48,40 +73,42 @@
             Have a happy day From a cup of coffee.
         </div>
         <div class="home_text">
-            ハッピーに溢れる1日を
-        </div>
-        <div class="home_text">
-            1杯のコーヒーから。
+            ハッピーに溢れる1日を<br>1杯のコーヒーから。
         </div>
         <div class="home_text">
             毎日を丁寧に大切に過ごしたい。
             だからこそ一杯一杯丁寧にコーヒーを入れ
-        </div>
-        <div class="home_text">
             足を運んでくれるお客さんには落ち着く空間と
             こだわりのコーヒーを提供したい。
         </div>
     </div>
 
     <section id="about">
-        <div class="about_main">
-            <p>
-                <img src="./images/pc_about-100.jpg" alt="ラテアート">
-            </p>
+        <div class="about_main_pc">
+            <img src="./images/pc_about-100.jpg" alt="ラテアート" class="aboutmain_pc_img">
             <ul>
                 <li class="about_img">
                     <img src="./images/about_us@2x.png" alt="about us">
                 </li>
                 <li class="about_title">
-                    私たちが提供する
-                </li>
-                <li class="about_title">
-                    こだわりのコーヒー
+                    私たちが提供する<br>こだわりのコーヒー
                 </li>
                 <li class="about_text">
                     サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
                 </li>
             </ul>
+        </div>
+        <div class="about_main_sp">
+            <div class="aboutus_sp">
+                <img src="./images/about_us@2x.png" alt="about us" 0>
+            </div>
+            <img src="./images/about_us@2x-100.jpg" alt="ラテアート" class="aboutmain_img_sp">
+            <p class="about_title_sp">
+                私たちが提供する<br>こだわりのコーヒー
+            </p>
+            <p class="about_text_sp">
+                サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+            </p>
         </div>
     </section>
 
@@ -94,7 +121,11 @@
             <ul>
                 <li>
                     <div class="text_img">
-                        <img src="./images/drink_sp@2x-100.jpg" alt="drink">
+                        <picture>
+                            <source srcset="./images/drink_sp@2x-100.jpg" media="
+                            (max-width:767px)">
+                            <img src="./images/pc_menu_drink-100.jpg" alt="drink">
+                        </picture>
                     </div>
                     <div class="menu_title">
                         Drink
@@ -104,7 +135,11 @@
                     </p>
                 <li>
                     <div class="text_img">
-                        <img src="./images/pc_menu_food-100.jpg " alt="food">
+                        <picture>
+                            <source srcset="./images/food_sp@2x-100.jpg" media="
+                            (max-width:767px)">
+                            <img src="./images/pc_menu_food-100.jpg " alt="food">
+                        </picture>
                     </div>
                     <div class="menu_title">
                         Food
@@ -114,7 +149,11 @@
                     </p>
                 <li>
                     <div class="text_img">
-                        <img src="./images/pc_menu_sweets-100.jpg" alt="sweets">
+                        <picture>
+                            <source srcset="./images/cake_sp@2x-100.jpg" media="
+                            (max-width:767px)">
+                            <img src="./images/pc_menu_sweets-100.jpg" alt="sweets">
+                        </picture>
                     </div>
                     <div class="menu_title">
                         Sweets
@@ -133,23 +172,14 @@
         </div>
 
         <div class="gallery_main">
-            <ul>
-                <li>
-                    <img src="./images/pc_gallary_05-100.jpg">
-                </li>
-                <li>
-                    <img src="./images/pc_gallary_04-100.jpg">
-                </li>
-                <li>
-                    <img src="./images/pc_gallary_03-100.jpg">
-                </li>
-                <li>
-                    <img src="./images/pc_gallary_02-100.jpg">
-                </li>
-                <li>
-                    <img src="./images/pc_gallary_01-100.jpg">
-                </li>
-            </ul>
+            <img src="./images/pc_gallary_05-100.jpg" class="sp_none">
+            <img src="./images/pc_gallary_04-100.jpg" class="sp_none">
+            <picture>
+                <source srcset="./images/mobile_gallery-100.jpg" media="(max-width:767px)">
+                <img src="./images/pc_gallary_03-100.jpg">
+            </picture>
+            <img src="./images/pc_gallary_02-100.jpg" class="sp_none">
+            <img src="./images/pc_gallary_01-100.jpg" class="sp_none">
         </div>
     </section>
 
@@ -222,6 +252,15 @@
             <img src="./images/to_top@2x.png">
         </a>
     </div>
+
+    <script>
+        $(function () {
+            $('.humburger').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.humburger').toggleClass('open');
+            });
+        });
+    </script>
 </body>
 
 </html>
