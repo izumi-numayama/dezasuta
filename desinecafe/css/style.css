@@ -164,6 +164,7 @@ body {
 
 .event_text {
     display: flex;
+    font-size: 23px;
 }
 
 .event_container {
