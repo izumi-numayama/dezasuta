@@ -119,7 +119,6 @@ body {
 }
 
 .menu_text ul li {
-    max-width: 300px;
     margin: 40px 20px 20px 20px;
 }
 
@@ -145,8 +144,16 @@ body {
 
 .gallery_main {
     display: flex;
-    width: 20%;
+    width: 100%;
     margin-bottom: 70px;
+}
+
+.gallery_main img {
+    width: 20%;
+}
+
+.gallery_main picture img {
+    width: 100%;
 }
 
 .event_img {
@@ -172,6 +179,7 @@ body {
 }
 
 .title {
+    text-decoration: underline;
     margin: 10px 0 10px 0;
 }
 
@@ -327,6 +335,10 @@ footer div ul li {
         width: 187.51px;
     }
 
+    .slider picture {
+        width: 100%;
+    }
+
     .home {
         margin: 43px 0 70px 0;
     }
@@ -344,6 +356,11 @@ footer div ul li {
         font-size: 16px;
         line-height: 27.25px;
         white-space: pre;
+        margin-top: -50px;
+    }
+
+    .home_text_p {
+        margin: -80px;
     }
 
     .about_main_pc {
@@ -387,6 +404,7 @@ footer div ul li {
     }
 
     .menu_text ul li {
+        padding-left: 16px;
         margin: 0 auto;
     }
 
@@ -411,14 +429,20 @@ footer div ul li {
         margin-bottom: 30px;
     }
 
+    .gallery_main picture {
+        width: 100%;
+    }
+
+    .gallery_main picture img {
+        width: 100%;
+    }
+
     .event_img {
         max-width: 100.86px;
         padding-bottom: 20px;
     }
 
     .event_container {
-        max-width: 335px;
-        max-height: 240px;
         padding: 20px 0 20px 0;
     }
 
