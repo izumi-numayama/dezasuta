@@ -5,9 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>デザインカフェ</title>
+    <!--slick-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <!--slick-->
+
+    <link rel="stylesheet" href="./css/lightbox.min.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -62,10 +71,19 @@
         </nav>
 
         <div class="slider">
-            <picture>
-                <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width: 767px)">
-                <img src="./images/pc_first-100.jpg" alt="カフェの様子">
-            </picture>
+            <div>
+                <picture>
+                    <source srcset="./images/sp_main_vs@2x-100.jpg" media="(max-width: 767px)">
+                    <img src="./images/pc_first-100.jpg" alt="カフェの様子">
+                </picture>
+            </div>
+            <div>
+                <picture>
+                    <source srcset="./images/sp_main_vs_2@2x-100.jpg" media="(max-width: 767px)">
+                    <img src="./images/slider_2.jpg" alt="カフェの様子">
+                </picture>
+            </div>
+
     </header>
 
     <div class="home">
@@ -176,14 +194,38 @@
         </div>
 
         <div class="gallery_main">
-            <img src="./images/pc_gallary_05-100.jpg" class="sp_none">
-            <img src="./images/pc_gallary_04-100.jpg" class="sp_none">
             <picture>
                 <source srcset="./images/mobile_gallery-100.jpg" media="(max-width:767px)">
-                <img src="./images/pc_gallary_03-100.jpg">
+                <a href="./images/pc_gallary_05-100.jpg" data-lightbox=""><img src="./images/pc_gallary_05-100.jpg"
+                        class="sp_none"></a>
             </picture>
-            <img src="./images/pc_gallary_02-100.jpg" class="sp_none">
-            <img src="./images/pc_gallary_01-100.jpg" class="sp_none">
+            <picture>
+
+                <source srcset="./images/mobile_gallery-100.jpg" media="(max-width:767px)">
+                <a href="./images/pc_gallary_04-100.jpg" data-lightbox=""><img src="./images/pc_gallary_04-100.jpg"
+                        class="sp_none"></a>
+            </picture>
+            <picture>
+
+                <source srcset="./images/mobile_gallery-100.jpg" media="(max-width:767px)">
+                <a href="./images/pc_gallary_03-100.jpg" data-lightbox=""><img src="./images/pc_gallary_03-100.jpg"></a>
+            </picture>
+            <picture>
+
+                <source srcset="./images/mobile_gallery-100.jpg" media="(max-width:767px)">
+                <a href="./images/pc_gallary_02-100.jpg" data-lightbox=""><img src="./images/pc_gallary_02-100.jpg"
+                        class="sp_none"></a>
+            </picture>
+            <picture>
+                <source srcset="./images/mobile_gallery-100.jpg" media="(max-width:767px)">
+                <a href="./images/pc_gallary_01-100.jpg" data-lightbox=""><img src="./images/pc_gallary_01-100.jpg"
+                        class="sp_none"></a>
+            </picture>
+            <picture>
+                <source srcset="./images/mobile_gallery-100.jpg" media="(max-width:767px)">
+                <a href="./images/pc_gallary_01-100.jpg" data-lightbox=""><img src="./images/pc_gallary_01-100.jpg"
+                        class="sp_none"></a>
+            </picture>
         </div>
     </section>
 
@@ -259,12 +301,32 @@
 
     <script>
         $(function () {
+            //スライダー
+            $('.slider').slick({
+                autoplayspeed: 2000,
+                autoplay: true,
+                dots: true,
+                arrows: false
+            });
+
+            $('.gallery_main').slick({
+                autoplayspeed: 2000,
+                autoplay: true,
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                arrows: false
+            });
+
+            //ハンバーガーメニュー
             $('.humburger').on('click', function () {
                 $('.sp_nav').fadeToggle();
                 $('.humburger').toggleClass('open');
             });
         });
+
     </script>
+    <script src="js/lightbox.min.js"></script>
 </body>
 
 </html>
