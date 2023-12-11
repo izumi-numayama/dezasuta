@@ -156,6 +156,10 @@ body {
     width: 100%;
 }
 
+.lb-data .lb-number {
+    display: none;
+}
+
 .event_img {
     width: 173.82px;
     margin: 0 auto;
@@ -447,6 +451,10 @@ footer div ul li {
     }
 
     .gallery_main picture img {
+        width: 100%;
+    }
+
+    .gallery_main img {
         width: 100%;
     }
 
