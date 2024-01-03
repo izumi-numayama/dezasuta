@@ -415,6 +415,10 @@ footer div ul li {
         margin-bottom: 25px;
     }
 
+    .text_img img {
+        width: 100%;
+    }
+
     .menu_text {
         margin: 0 auto;
     }
@@ -424,7 +428,7 @@ footer div ul li {
     }
 
     .menu_text ul li {
-        padding-left: 16px;
+        padding: 0 16px;
         margin: 0 auto;
     }
 
@@ -461,6 +465,10 @@ footer div ul li {
         width: 100%;
     }
 
+    #event {
+        padding: 0 16px;
+    }
+
     .event_img {
         max-width: 100.86px;
         padding-bottom: 20px;
@@ -481,7 +489,10 @@ footer div ul li {
 
     .title {
         font-size: 16px;
-        margin: 10px 0 30px 30px;
+        margin: 10px 30px 30px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .access_img {

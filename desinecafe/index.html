@@ -301,28 +301,39 @@
     </div>
 
     <script>
-        $(function () {
-            //スライダー
-            $('.slider').slick({
-                autoplayspeed: 2000,
-                autoplay: true,
-                dots: true,
-                arrows: false
-            });
+        $(window).on('load', function () {
+            $(function () {
+                //スライダー
+                $('.slider').slick({
+                    autoplaySpeed: 2000,
+                    autoplay: true,
+                    dots: true,
+                    arrows: false
+                });
 
-            $('.gallery_main').slick({
-                autoplayspeed: 2000,
-                autoplay: true,
-                infinite: true,
-                slidesToShow: 5,
-                slidesToScroll: 1,
-                arrows: false
-            });
+                $('.gallery_main').slick({
+                    autoplaySpeed: 2000,
+                    autoplay: true,
+                    infinite: true,
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    responsive: [
+                        {
+                            breakpoint: 767,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                            }
+                        }
+                    ]
+                });
 
-            //ハンバーガーメニュー
-            $('.humburger').on('click', function () {
-                $('.sp_nav').fadeToggle();
-                $('.humburger').toggleClass('open');
+                //ハンバーガーメニュー
+                $('.humburger').on('click', function () {
+                    $('.sp_nav').fadeToggle();
+                    $('.humburger').toggleClass('open');
+                });
             });
         });
 
