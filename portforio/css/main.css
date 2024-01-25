@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+body {
+    background-color: #1c529c;
+}
+
+.mainVisual-first {
+    font-family: Acumin Variable Concept;
+    font-size: 103px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px #e2e2e2;
+    text-stroke: 1px #e2e2e2;
+    text-align: center;
+    margin-top: 147px;
+}
+
+.mainVisual-second {
+    font-family: Acumin Variable Concept;
+    font-size: 103px;
+    font-weight: bold;
+    color: #e2e2e2;
+    padding: 55px 0 55px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mainVisual-third {
+    font-family: Acumin Variable Concept;
+    font-size: 103px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px #e2e2e2;
+    text-stroke: 1px #e2e2e2;
+    text-align: center;
+    margin-bottom: 78px;
+}
+
+.arrow {
+    font-family: Acumin Variable Concept;
+    font-size: 14px;
+    color: #e2e2e2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.arrow-span {
+    text-align: center;
+}
+
+.arrow-down {
+    display: inline-block;
+    vertical-align: middle;
+    color: #e2e2e2;
+    line-height: 1;
+    width: 1em;
+    height: 1em;
+    border: 0.1em solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateY(-25%) rotate(135deg);
+    text-align: center;
+}
+
+.photo-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 60px;
+}
+
+.photo-img {
+    width: 22%;
+}
+
+.photo-img img {
+    width: 100%;
+}
+
+.works-btn {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.btn-more {
+    font-size: 20px;
+    color: #e2e2e2;
+    background-color: #1c529c;
+    border: 1px solid #e2e2e2;
+    border-radius: 15px;
+    padding: 10px 38px;
+    margin-top: 80px;
+}
+
+.about-contents {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    margin: 183px 4% 100px 10%;
+}
+
+.about-img {
+    max-width: 329px;
+}
+
+.about-contents-inner {
+    padding-left: 65px;
+}
+.about-name {
+    font-size: 41px;
+    color: #e2e2e2;
+    margin-bottom: 58px;
+}
+
+.about-mane-ro {
+    font-size: 24px;
+    margin-left: 4%;
+}
+
+.about-text {
+    font-size: 20px;
+    color: #e2e2e2;
+    line-height: 40px;
+}
+
+.about-btn {
+    margin-top: 43px;
+    text-align: right;
+}

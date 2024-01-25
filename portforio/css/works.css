@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+.works-container {
+    display: flex;
+}
+
+.btn-filter {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1c529c;
+    margin: 65px 0 0 5%;
+}
+
+.btn-filter a {
+    line-height: 36px;
+    display: block;
+}
+
+.all {
+    border-bottom: 2px solid #1c529c;
+}
+
+.arrow-down {
+    display: inline-block;
+    vertical-align: middle;
+    color: #1c529c;
+    line-height: 1;
+    width: 0.7em;
+    height: 0.7em;
+    border: 0.1em solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateY(-25%) rotate(135deg);
+    margin-left: 114px;
+}
+
+.main-contents {
+    margin-top: 82px;
+}
+.main-contents img {
+    border: 1px solid #222222;
+    max-width: 50%;
+    margin-left: 33%;
+}
+
+.dezasuta-mobile-description {
+    background-color: #e2e2e2;
+    width: 88%;
+    height: 267px;
+    margin: 30px 10% 0 10%;
+}
+
+.dli-plus {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    line-height: 1;
+    width: 1em;
+    height: 0.1em;
+    background: currentColor;
+    border-radius: 0.1em;
+    position: relative;
+    margin: 0 18px 0 25px;
+}
+
+.dli-plus::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: inherit;
+    transform: rotate(90deg);
+}
+
+.main-contents-description-title {
+    font-weight: bold;
+    color: #fff;
+    background-color: #1c529c;
+    line-height: 51px;
+}
+
+.main-contents-category {
+    font-weight: lighter;
+    position: relative;
+    right: -53%;
+}
+
+.main-contents-description {
+    display: flex;
+}
+
+.main-contents-description-ul {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1c529c;
+    width: 40%;
+    margin: 30px 2% 68px 5%;
+}
+
+.main-contents-description-li {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1c529c;
+    line-height: 30px;
+}
+
+.main-contents-description-li-span {
+    margin-left: 18%;
+}
+
+.main-contents-description-li-span-soft {
+    margin-left: 7%;
+}
+
+.close {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222222;
+    height: 15px;
+    margin: -75px 0 0 27px;
+}
+
+.btn-close {
+    display: inline-block;
+    padding: 0 18px 5px 0;
+}
+
+.btn-close::before,
+.btn-close::after {
+    display: block;
+    content: "";
+    width: 15px;
+    height: 1px;
+    background: #1c529c;
+}
+.btn-close::before {
+    transform: rotate(-45deg);
+}
+.btn-close::after {
+    transform: rotate(45deg);
+}
