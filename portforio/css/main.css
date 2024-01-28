@@ -25,6 +25,10 @@ body {
     text-align: center;
 }
 
+.pc {
+    display: none;
+}
+
 .mainVisual-third {
     font-family: Acumin Variable Concept;
     font-size: 103px;
@@ -128,4 +132,70 @@ body {
 .about-btn {
     margin-top: 43px;
     text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+    .mainVisual-first,
+    .mainVisual-third {
+        display: none;
+    }
+
+    .mainVisual-second {
+        font-size: 50px;
+        line-height: 83px;
+        padding: 115px 0 228px 0;
+    }
+
+    .pc {
+        display: block;
+    }
+
+    .photo-img {
+        width: 80%;
+    }
+
+    .photo-list {
+        gap: 0;
+    }
+
+    .works-btn {
+        margin-top: 0;
+    }
+
+    .btn-more {
+        padding: 10px 50px;
+        letter-spacing: 5px;
+    }
+
+    .category-main {
+        margin-top: 112px;
+    }
+
+    .about-contents {
+        display: block;
+        text-align: center;
+        margin-top: 53px;
+    }
+
+    .about-contents-inner {
+        padding-left: 0;
+        margin-top: 37px;
+    }
+
+    .about-name {
+        font-size: 18px;
+        margin-bottom: 46px;
+    }
+
+    .about-mane-ro {
+        font-size: 18px;
+    }
+
+    .about-text {
+        font-size: 18px;
+    }
+
+    .about-btn {
+        text-align: center;
+    }
 }

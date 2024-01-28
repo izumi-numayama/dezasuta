@@ -83,3 +83,9 @@
     color: #1c529c;
     margin-top: 4%;
 }
+
+@media screen and (max-width: 767px) {
+    .about-contents-inner {
+        display: block;
+    }
+}

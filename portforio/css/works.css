@@ -42,12 +42,11 @@
 }
 .main-contents img {
     border: 1px solid #222222;
-    max-width: 50%;
+    width: 50%;
     margin-left: 33%;
 }
 
 .dezasuta-mobile-description {
-    background-color: #e2e2e2;
     width: 88%;
     height: 267px;
     margin: 30px 10% 0 10%;
@@ -93,6 +92,7 @@
 
 .main-contents-description {
     display: flex;
+    background-color: #e2e2e2;
 }
 
 .main-contents-description-ul {
