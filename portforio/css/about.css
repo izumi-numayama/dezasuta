@@ -5,8 +5,6 @@
 }
 
 .about-text {
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
-        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     font-size: 25px;
     color: #222222;
     line-height: 37px;
@@ -25,8 +23,6 @@
 }
 
 .about-design-text {
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
-        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     font-size: 20px;
     color: #222222;
     line-height: 35px;
@@ -43,8 +39,6 @@
 }
 
 .about-coding-text {
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
-        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     font-size: 20px;
     color: #222222;
     line-height: 35px;
@@ -60,24 +54,18 @@
 }
 
 .about-me {
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
-        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     font-size: 41px;
     color: #1c529c;
     margin-top: 58px;
 }
 
 .about-me-ro {
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
-        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     font-size: 24px;
     color: #1c529c;
     margin-left: 52px;
 }
 
 .about-me-text {
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
-        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     font-size: 20px;
     font-weight: lighter;
     color: #1c529c;
@@ -87,5 +75,53 @@
 @media screen and (max-width: 767px) {
     .about-contents-inner {
         display: block;
+        margin-bottom: 110px;
+    }
+
+    .about-design-img {
+        max-width: 100%;
+    }
+
+    .about-design-text {
+        margin: 90px 0 75px 0;
+    }
+
+    .about-coding {
+        margin: 0;
+    }
+
+    .about-design-coding {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .about-coding-text {
+        margin: 90px 0 75px 0;
+    }
+
+    .winter {
+        width: 100%;
+    }
+
+    .about-img-inner {
+        width: 50%;
+    }
+
+    .about-img-inner-last {
+        transform: rotate(-90deg);
+        width: 75.3%;
+        margin: -67px 0 0 63px;
+    }
+
+    .about-me {
+        font-size: 20px;
+    }
+
+    .about-me-ro {
+        font-size: 20px;
+    }
+
+    .about-me-text {
+        line-height: 35px;
     }
 }
