@@ -39,6 +39,7 @@
 
 .main-contents {
     margin-top: 82px;
+    display: inline;
 }
 .main-contents img {
     border: 1px solid #222222;
@@ -48,8 +49,7 @@
 
 .dezasuta-mobile-description {
     width: 88%;
-    height: 267px;
-    margin: 30px 10% 0 10%;
+    margin: 30px 10% 20%;
 }
 
 .dli-plus {
