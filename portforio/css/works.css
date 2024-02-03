@@ -48,7 +48,9 @@
 }
 
 .dezasuta-mobile-description {
+    background-color: #e2e2e2;
     width: 88%;
+    padding-bottom: 20px;
     margin: 30px 10% 20%;
 }
 
@@ -92,7 +94,6 @@
 
 .main-contents-description {
     display: flex;
-    background-color: #e2e2e2;
 }
 
 .main-contents-description-ul {

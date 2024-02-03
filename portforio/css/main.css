@@ -1,7 +1,19 @@
 @charset "utf-8";
 
+.pc-none {
+    display: none;
+}
+
 body {
     background-color: #1c529c;
+}
+
+.FV {
+    z-index: -1;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    height: 600px;
 }
 
 .mainVisual-first {
@@ -135,6 +147,14 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+    .pc-none {
+        display: block;
+        font-size: 24px;
+        font-weight: bold;
+        color: #e2e2e2;
+        margin-bottom: 25px;
+    }
+
     .mainVisual-first,
     .mainVisual-third {
         display: none;
