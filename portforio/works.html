@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/works.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/move.js"></script>
 </head>
 
 <body>
@@ -23,22 +24,22 @@
         </h2>
         <div class="works-container">
             <div class="btn-filter">
-                <a href="" class="all" data-filter="all">全て見る<span class="arrow-down"></span></a>
-                <a href="" class="design" data-filter="design">デザイン</a>
-                <a href="" class="coding" data-filter="coding">コーディング</a>
-                <a href="" class="other" data-filter="other">その他</a>
+                <div class="all">全て見る<span class="arrow-down"></span></div>
+                <div class="design">デザイン</div>
+                <div class="coding">コーディング</div>
+                <div class="other">その他</div>
             </div>
             <div>
                 <div class="main-contents">
                     <div class="dezasuta-mobile">
-                        <img src="./img/kadai1.jpg" alt="デザスタモバイルバナー">
-                        <div class="dezasuta-mobile-description">
+                        <img src="./img/kadai1.jpg" alt="デザスタモバイルバナー" class="main-contents-img">
+                        <div class="description">
                             <p class=main-contents-description-title>
                                 <span class="dli-plus"></span>
                                 デザスタmobileバナーデザイン【架空】
                                 <span class="main-contents-category">＃デザイン</span>
                             </p>
-                            <div class="main-contents-description">
+                            <div class="main-contents1-description">
                                 <ul class="main-contents-description-ul">
                                     <li class="main-contents-description-li">
                                         ● 案件<span class="main-contents-description-li-span">バナー制作</span>
@@ -69,14 +70,14 @@
                 </div>
                 <div class="main-contents">
                     <div class="TRRRRIP">
-                        <img src="./img/kadai2.jpg" alt="TRRRRIPバナー">
-                        <div class="dezasuta-mobile-description">
+                        <img src="./img/kadai2.jpg" alt="TRRRRIPバナー" class="main-contents-img">
+                        <div class="description">
                             <p class=main-contents-description-title>
                                 <span class="dli-plus"></span>
                                 TRRRRIPバナーデザイン【架空】
                                 <span class="main-contents-category">＃デザイン</span>
                             </p>
-                            <div class="main-contents-description">
+                            <div class="main-contents2-description">
                                 <ul class="main-contents-description-ul">
                                     <li class="main-contents-description-li">
                                         ● 案件<span class="main-contents-description-li-span">バナー制作</span>
@@ -106,14 +107,14 @@
                 </div>
                 <div class="main-contents">
                     <div class="humburgerpop">
-                        <img src="./img/kadai3(POP).jpg" alt="ハンバーガーバナー">
-                        <div class="dezasuta-mobile-description">
+                        <img src="./img/kadai3(POP).jpg" alt="ハンバーガーバナー" class="main-contents-img">
+                        <div class="description">
                             <p class=main-contents-description-title>
                                 <span class="dli-plus"></span>
                                 ハンバーガーバナーデザイン【架空】
                                 <span class="main-contents-category">＃デザイン</span>
                             </p>
-                            <div class="main-contents-description">
+                            <div class="main-contents3-description">
                                 <ul class="main-contents-description-ul">
                                     <li class="main-contents-description-li">
                                         ● 案件<span class="main-contents-description-li-span">バナー制作</span>
@@ -143,14 +144,14 @@
                 </div>
                 <div class="main-contents">
                     <div class="humburgerluxury">
-                        <img src="./img/kadai3(高級感).jpg" alt="ハンバーガーバナー">
-                        <div class="dezasuta-mobile-description">
+                        <img src="./img/kadai3(高級感).jpg" alt="ハンバーガーバナー" class="main-contents-img">
+                        <div class="description">
                             <p class=main-contents-description-title>
                                 <span class="dli-plus"></span>
                                 ハンバーガーバナーデザイン【架空】
                                 <span class="main-contents-category">＃デザイン</span>
                             </p>
-                            <div class="main-contents-description">
+                            <div class="main-contents4-description">
                                 <ul class="main-contents-description-ul">
                                     <li class="main-contents-description-li">
                                         ● 案件<span class="main-contents-description-li-span">バナー制作</span>
@@ -180,14 +181,14 @@
                 </div>
                 <div class="main-contents">
                     <div class="coworking space">
-                        <img src="./img/kadai4.png" alt="コワーキングスペースLP">
-                        <div class="dezasuta-mobile-description">
+                        <img src="./img/kadai4.png" alt="コワーキングスペースLP" class="main-contents-img">
+                        <div class="description">
                             <p class=main-contents-description-title>
                                 <span class="dli-plus"></span>
                                 コワーキングスペースLPデザイン【架空】
                                 <span class="main-contents-category">＃デザイン</span>
                             </p>
-                            <div class="main-contents-description">
+                            <div class="main-contents5-description">
                                 <ul class="main-contents-description-ul">
                                     <li class="main-contents-description-li">
                                         ● 案件<span class="main-contents-description-li-span">バナー制作</span>
@@ -220,58 +221,57 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="main-contents">
+                    <div class="beauty salon">
+                        <img src="./img/kadai5_pc@2x.png" alt="美容室LP" class="main-contents-img">
+                        <div class="description">
+                            <p class=main-contents-description-title>
+                                <span class="dli-plus"></span>
+                                美容室LPデザイン【架空】
+                                <span class="main-contents-category">＃デザイン</span>
+                            </p>
+                            <div class="main-contents6-description">
+                                <ul class="main-contents-description-ul">
+                                    <li class="main-contents-description-li">
+                                        ● 案件<span class="main-contents-description-li-span">バナー制作</span>
+                                    </li>
+                                    <li class="main-contents-description-li">
+                                        ● 内容<span class="main-contents-description-li-span">デザイン</span>
+                                    </li>
+                                    <li class="main-contents-description-li">
+                                        ● 使用ソフト<span class="main-contents-description-li-span-soft">illustrator</span>
+                                    </li>
+                                </ul>
+                                <ul class="main-contents-description-ul">
+                                    <li class="main-contents-description-li">
+                                        ● 制作意図
+                                    </li>
+                                    <li class="main-contents-description-li">
+                                        美容室のLPデザインです。コーポレートカラーのピンクを基調に丸みのあるデザインにしました。
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="main-contents-description-img">
+                                <img src="./img/kadai5.jpg" alt="美容室LP" class="main-contents-description-img1">
+                            </div>
 
-                    <div class="main-contents">
-                        <div class="beauty salon">
-                            <img src="./img/kadai5_pc@2x.png" alt="美容室LP">
-                            <div class="dezasuta-mobile-description">
-                                <p class=main-contents-description-title>
-                                    <span class="dli-plus"></span>
-                                    美容室LPデザイン【架空】
-                                    <span class="main-contents-category">＃デザイン</span>
-                                </p>
-                                <div class="main-contents-description">
-                                    <ul class="main-contents-description-ul">
-                                        <li class="main-contents-description-li">
-                                            ● 案件<span class="main-contents-description-li-span">バナー制作</span>
-                                        </li>
-                                        <li class="main-contents-description-li">
-                                            ● 内容<span class="main-contents-description-li-span">デザイン</span>
-                                        </li>
-                                        <li class="main-contents-description-li">
-                                            ● 使用ソフト<span
-                                                class="main-contents-description-li-span-soft">illustrator</span>
-                                        </li>
-                                    </ul>
-                                    <ul class="main-contents-description-ul">
-                                        <li class="main-contents-description-li">
-                                            ● 制作意図
-                                        </li>
-                                        <li class="main-contents-description-li">
-                                            美容室のLPデザインです。コーポレートカラーのピンクを基調に丸みのあるデザインにしました。
-                                        </li>
-                                    </ul>
-                                    <div class="main-contents-description-img">
-                                        <img src="./img/kadai5.jpg" alt="美容室LP">
-                                    </div>
-                                </div>
-                                <div class="close">
-                                    <span class="btn-close"></span>閉じる
-                                </div>
+                            <div class="close">
+                                <span class="btn-close"></span>閉じる
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="main-contents">
                     <div class="cafe">
-                        <img src="./img/dezasuta.png" alt="カフェホームページ">
-                        <div class="dezasuta-mobile-description">
+                        <img src="./img/dezasuta.png" alt="カフェホームページ" class="main-contents-img">
+                        <div class="description">
                             <p class=main-contents-description-title>
                                 <span class="dli-plus"></span>
                                 カフェホームページコーディング【架空】
                                 <span class="main-contents-category">＃デザイン</span>
                             </p>
-                            <div class="main-contents-description">
+                            <div class="main-contents7-description">
                                 <ul class="main-contents-description-ul">
                                     <li class="main-contents-description-li">
                                         ● 案件<span class="main-contents-description-li-span">バナー制作</span>
@@ -296,11 +296,14 @@
                                         カフェのホームページのPCとレスポンシブページのコーディングを行いました。トップとギャラリーがスライドするのが特徴です。
                                     </li>
                                 </ul>
-                                <div class="main-contents-description-img">
-                                    <img src="./img/dezasuta_LP_PC.jpg" alt="カフェホームページ">
-                                    <img src="./img/dezasuta_LP_sp.jpg" alt="カフェホームページ">
-                                </div>
                             </div>
+                            <div class="main-contents-description-img">
+                                <img src="./img/dezasuta_LP_PC.jpg" alt="カフェホームページ"
+                                    class="main-contents-description-img1">
+                                <img src="./img/dezasuta_LP_sp.jpg" alt="カフェホームページ"
+                                    class="main-contents-description-img2">
+                            </div>
+
                             <div class="close">
                                 <span class="btn-close"></span>閉じる
                             </div>
@@ -359,8 +362,6 @@
     <footer class="copyright">
         &copy;︎memorable design
     </footer>
-
-    <script src="./js/js.js"></script>
 </body>
 
 </html>

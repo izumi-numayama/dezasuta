@@ -13,9 +13,10 @@
     margin: 65px 0 0 5%;
 }
 
-.btn-filter a {
+.design,
+.coding,
+.other {
     line-height: 36px;
-    display: block;
 }
 
 .all {
@@ -41,16 +42,15 @@
     margin-top: 82px;
     display: inline;
 }
-.main-contents img {
+.main-contents-img {
     border: 1px solid #222222;
     width: 50%;
     margin-left: 33%;
 }
 
-.dezasuta-mobile-description {
+.description {
     background-color: #e2e2e2;
     width: 88%;
-    padding-bottom: 20px;
     margin: 30px 10% 20%;
 }
 
@@ -92,7 +92,13 @@
     right: -53%;
 }
 
-.main-contents-description {
+.main-contents1-description,
+.main-contents2-description,
+.main-contents3-description,
+.main-contents4-description,
+.main-contents5-description,
+.main-contents6-description,
+.main-contents7-description {
     display: flex;
 }
 
@@ -117,6 +123,22 @@
 
 .main-contents-description-li-span-soft {
     margin-left: 7%;
+}
+
+.main-contents-description-img {
+    display: flex;
+    justify-content: center;
+}
+
+.main-contents-description-img1 {
+    height: 50%;
+    width: 50%;
+    margin-left: 2%;
+}
+.main-contents-description-img2 {
+    height: 50%;
+    width: 30%;
+    margin-left: 2%;
 }
 
 .close {

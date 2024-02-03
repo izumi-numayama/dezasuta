@@ -1,7 +1,7 @@
 // パララックスのターゲット取得
 const target = document.getElementsByClassName('js-parallax');
 // パララックスを行うエリア
-const activeArea = document.getElementById('js-parallaxArea');
+const activeArea = $('js-parallaxArea');
 // ウィンドウの中心の取得
 const xCenter = window.innerWidth / 2;
 const yCenter = window.innerHeight / 2;
@@ -18,4 +18,6 @@ activeArea.addEventListener('mousemove', (e) => {
     target[i].style.transform = `translate(${-x}px, ${-y}px)`;
   }
 });
+
+
 
