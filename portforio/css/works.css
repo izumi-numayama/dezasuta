@@ -2,6 +2,13 @@
 
 .works-container {
     display: flex;
+    margin-top: 50px;
+}
+
+.sticky {
+    postion: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .btn-filter {
@@ -9,20 +16,18 @@
         "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     font-size: 20px;
     font-weight: bold;
+    line-height: 36px;
     color: #1c529c;
     margin: 65px 0 0 5%;
-}
-
-.design,
-.coding,
-.other {
-    line-height: 36px;
 }
 
 .all {
     border-bottom: 2px solid #1c529c;
 }
 
+.tab-area {
+    cursor: pointer;
+}
 .arrow-down {
     display: inline-block;
     vertical-align: middle;
@@ -36,6 +41,14 @@
     box-sizing: border-box;
     transform: translateY(-25%) rotate(135deg);
     margin-left: 114px;
+}
+
+.panel {
+    display: none;
+}
+
+.panel.active {
+    display: block;
 }
 
 .main-contents {
@@ -67,6 +80,10 @@
     margin: 0 18px 0 25px;
 }
 
+.dli-plus.open {
+    transform: rotate(45deg);
+}
+
 .dli-plus::before {
     content: "";
     position: absolute;
@@ -90,6 +107,10 @@
     font-weight: lighter;
     position: relative;
     right: -53%;
+}
+
+.works-wrapper {
+    display: none;
 }
 
 .main-contents1-description,
@@ -142,11 +163,13 @@
 }
 
 .close {
+    cursor: pointer;
     font-size: 16px;
     font-weight: bold;
     color: #222222;
     height: 15px;
-    margin: -75px 0 0 27px;
+    margin: 0 0 0 27px;
+    padding-bottom: 30px;
 }
 
 .btn-close {
@@ -167,4 +190,25 @@
 }
 .btn-close::after {
     transform: rotate(45deg);
+}
+
+@media screen and (max-width: 767px) {
+    .main-contents1-description,
+    .main-contents2-description,
+    .main-contents3-description,
+    .main-contents4-description,
+    .main-contents5-description,
+    .main-contents6-description,
+    .main-contents7-description {
+        flex-direction: column-reverse;
+    }
+    .main-contents-description-ul {
+        width: 90%;
+        margin: auto;
+        padding: 16px;
+    }
+
+    .btn-filter {
+        display: none;
+    }
 }

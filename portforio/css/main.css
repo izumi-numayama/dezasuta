@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+.sp-nav,
 .pc-none {
     display: none;
 }
@@ -7,11 +8,19 @@
 body {
     background-color: #1c529c;
 }
+.pararaxArea {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+
+    .pararaxItem {
+        opacity: 0.5;
+        transition: transform 0.1s linear 0.008s;
+    }
+}
 
 .FV {
-    z-index: -1;
     width: 90%;
-    position: absolute;
     left: 5%;
     height: 600px;
 }
@@ -217,5 +226,74 @@ body {
 
     .about-btn {
         text-align: center;
+    }
+
+    .sp-nav {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(000, 000, 000, 0.5);
+        z-index: 3;
+    }
+    .sp-nav ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sp-nav li {
+        padding: 16px;
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .humburger-main {
+        display: block;
+        cursor: pointer;
+        height: 30px;
+        width: 33px;
+        position: absolute;
+        z-index: 9999;
+        right: 0;
+    }
+    .humburger-main span {
+        width: 33px;
+        height: 3px;
+        background-color: #fff;
+        position: absolute;
+        content: "";
+        top: 20px;
+        right: 10px;
+        z-index: 9999;
+        transition: 0.3s;
+    }
+
+    .humburger-main span::before,
+    .humburger-main span::after {
+        position: absolute;
+        content: "";
+        width: 33px;
+        height: 3px;
+        background-color: #fff;
+        transition: 0.3s;
+    }
+    .humburger-main span::before {
+        top: -10px;
+    }
+    .humburger-main span::after {
+        top: 10px;
+    }
+
+    .open span {
+        background: transparent;
+    }
+    .open span::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .open span::after {
+        transform: rotate(-45deg);
+        top: 0;
     }
 }
