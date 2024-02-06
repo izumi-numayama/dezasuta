@@ -32,6 +32,7 @@
 
 .tab-area {
     cursor: pointer;
+    width: 100%;
 }
 .arrow-down {
     display: inline-block;
@@ -216,6 +217,10 @@
 #Works {
     max-width: 1400px;
     margin: 0 auto;
+}
+
+.main-contents-description-li-span-site {
+    margin-left: 20%;
 }
 
 @media screen and (max-width: 767px) {
