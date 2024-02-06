@@ -17,6 +17,17 @@
         <nav class="header-nav">
 
             <div class="humburger"><span></span></div>
+            <div class="sp-nav">
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./works.html">Works</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <section id="About">
@@ -112,6 +123,13 @@
     <footer class="copyright">
         &copy;︎memorable design
     </footer>
+
+    <script>
+        $('.humburger').on('click', function () {
+            $('.sp-nav').fadeToggle();
+            $('.humburger').toggleClass('open');
+        });
+    </script>
 </body>
 
 </html>

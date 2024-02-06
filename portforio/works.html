@@ -15,6 +15,17 @@
     <header>
         <nav class="header-nav">
             <div class="humburger"><span></span></div>
+            <div class="sp-nav">
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <section id="Works">
@@ -24,13 +35,10 @@
         <div class="works-container">
             <div class="sticky">
                 <ul class="btn-filter tab-area">
-                    <li class="tab active ">全て見る<span class="arrow-down"></span></li>
-                    <div class="accordion0">
-                        <li class="tab">全て見る</li>
-                        <li class="tab">デザイン</li>
-                        <li class="tab">コーディング</li>
-                        <li class="tab">その他</li>
-                    </div>
+                    <li class="tab aco ">全て見る<span class="arrow-down"></span></li>
+                    <li class="tab active-aco">デザイン</li>
+                    <li class="tab active-aco">コーディング</li>
+                    <li class="tab active-aco">その他</li>
                 </ul>
             </div>
             <div class="tab-area">
@@ -636,7 +644,6 @@
                 </div>
             </div>
         </div>
-        </div>
     </section>
 
     <section id="Contact">
@@ -714,6 +721,18 @@
                 var index = $('.tab').index(this);
                 $('.panel').eq(index).addClass('active');
             });
+        });
+
+        $(document).ready(function () {
+            $('.aco').click(function () {
+                $('.active-aco').slideToggle();
+                $(this).find('.arrow-down').toggleClass('arrow-up');
+            });
+        });
+
+        $('.humburger').on('click', function () {
+            $('.sp-nav').fadeToggle();
+            $('.humburger').toggleClass('open');
         });
 
     </script>

@@ -8,6 +8,9 @@ header {
 
 .header-nav-main {
     margin: 40px 0 0 56px;
+    position: absolute;
+    left: 1%;
+    top: -3%;
 }
 
 .gNav-main {
@@ -24,6 +27,7 @@ header {
     margin-right: 65px;
     position: absolute;
     right: 1%;
+    top: 1%;
 }
 
 .header-nav {
@@ -344,7 +348,7 @@ textarea {
         align-items: normal;
     }
     .header-nav-main {
-        margin: 20px 0 0 25px;
+        margin: 45px 0 0 25px;
         z-index: 0;
     }
 
